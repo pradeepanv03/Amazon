@@ -1,0 +1,79 @@
+@import "../../../Mixins/Mixins.scss";
+// body{
+//   // background-color: rgb(29, 28, 28);
+// display: flex;
+// }
+main {
+  // height: 100vh;
+  background-size: cover;
+  background-color: rgb(15, 27, 43);
+  height: 80px;
+  width: 100%;
+  display: flex;
+flex-direction: row;
+// flex-wrap: nowrap;
+position: relative;
+padding: 0px 15px;
+box-sizing: border-box;
+.left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: grey;
+  height: 100%;
+  width: 50%;
+  ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    li{
+padding: 10px 10px ;
+font-size: 15px;
+color: rgb(188, 186, 186);
+    }
+  }
+
+}
+.right{
+  position: absolute;
+  right:0% ;
+  display: flex;
+  align-items: center; 
+  p{
+    color: rgb(134, 132, 132);
+    font-size: 15px;
+    padding-left: 15px;
+    display: none;
+  } 
+  .cover_btn{
+    height: 40px;
+    width: 125px;
+    font-size: 15px;
+    border-radius: 5px ;
+    color: #fff;
+    background-color: rgb(29, 135, 188);
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    // float: right;
+    li{
+padding: 10px 10px ;
+font-size: 20px;
+color: rgb(188, 186, 186);
+    }
+  }
+}
+}
+
+@media only screen and (max-width: 880px) {
+  .cover_btn {
+display: none;
+  }
+}
+@media only screen and (max-width:700px) {
+  .left ul li {
+display: none;
+  }
+}
